@@ -11,16 +11,9 @@
     <br />
     <a href="https://json.hunghg.me"><strong>Learn more »</strong></a>
     <br />
-    <br />
-    <a href="https://todiagram.com">ToDiagram</a>
-    ·
-    <a href="https://discord.gg/yVyTtCRueq">Discord</a>
-    ·
     <a href="https://json.hunghg.me">Website</a>
     ·
     <a href="https://github.com/hunghg255/json-preview/issues">Issues</a>
-    ·
-    <a href="https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode">VS Code</a>
   </p>
 </p>
 

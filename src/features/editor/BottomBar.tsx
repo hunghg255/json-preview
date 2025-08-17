@@ -161,7 +161,7 @@ export const BottomBar = () => {
                 {format.label}
               </Menu.Item>
             ))}
-            <Menu.Item
+            {/* <Menu.Item
               fz={12}
               onClick={() =>
                 window.open(
@@ -172,7 +172,7 @@ export const BottomBar = () => {
               rightSection={<FaCrown color="gray" />}
             >
               Custom
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu.Dropdown>
         </Menu>
       </StyledRight>
