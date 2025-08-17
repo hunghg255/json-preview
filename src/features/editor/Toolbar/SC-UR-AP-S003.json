@@ -1,0 +1,178 @@
+{
+  "approval_apis": {
+    "form_classification": {
+      "get_form_classify_list": {
+        "description": "Xem danh sách các loại biểu mẫu",
+        "id": "SC-UR-AP-S003",
+        "api_id": "IF-AD-AP-S051-P001",
+        "api_path": "/app/approval/eapFormClassify/getEapFormClassifyList",
+        "request": {},
+        "response": {
+          "code": "0000",
+          "message": "성공",
+          "responseTime": "2025.06.19 09:28:10",
+          "body": [
+            {
+              "formClassifyId": "2",
+              "formClassifyNm": "기안문서",
+              "useYn": "Y",
+              "sortSeq": 1,
+              "companyNm": "한진칼"
+            },
+            {
+              "formClassifyId": "3",
+              "formClassifyNm": "기안문서",
+              "useYn": "Y",
+              "sortSeq": 1,
+              "companyNm": "한진칼"
+            },
+            {
+              "formClassifyId": "EFC202506181724001222",
+              "formClassifyNm": "서식문서",
+              "useYn": "Y",
+              "sortSeq": 1,
+              "companyNm": "한진칼"
+            },
+            {
+              "formClassifyId": "EFC202506181725001223",
+              "formClassifyNm": "보고문서",
+              "useYn": "Y",
+              "sortSeq": 1,
+              "companyNm": "한진칼"
+            },
+            {
+              "formClassifyId": "EFC202506181756001224",
+              "formClassifyNm": "서식문서",
+              "useYn": "Y",
+              "sortSeq": 1,
+              "companyNm": "한진칼"
+            }
+          ]
+        }
+      }
+    },
+    "form_list": {
+      "get_form_list": {
+        "description": "Xem danh sách biểu mẫu",
+        "id": "SC-UR-AP-S003",
+        "api_id": "IF-AD-AP-S052-P001",
+        "api_path": "app/approval/eapForm/getEapFormList",
+        "request": {
+          "formClassifyId": "string",
+          "formNm": "기안서",
+          "useYn": "Y",
+          "rowsPerPage": 20,
+          "pageIdx": 1
+        },
+        "response": {
+          "code": "0000",
+          "message": "성공",
+          "responseTime": "2025.07.07 11:28:53",
+          "paginationInfo": {
+            "rowsPerPage": 20,
+            "pageIdx": 1,
+            "totalCount": 2
+          },
+          "body": [
+            {
+              "rowsPerPage": 20,
+              "pageIdx": 1,
+              "formId": "FORM202506201108001295",
+              "formNm": "교육신청서99",
+              "useYn": "Y",
+              "formClassifyNm": "기안문서",
+              "processNm": "기안 > 결재 > 합의 >종결 >열람"
+            },
+            {
+              "rowsPerPage": 20,
+              "pageIdx": 1,
+              "formId": "FORM202507031513003262",
+              "formNm": "교육신청서",
+              "useYn": "Y",
+              "formClassifyNm": "기안문서",
+              "processNm": "기안 > 결재 > 합의 >종결 >열람"
+            }
+          ]
+        }
+      }
+    },
+    "form_bookmark": {
+      "get_my_form_interest_list": {
+        "description": "Xem danh sách các biểu mẫu bookmark",
+        "id": "SC-UR-AP-S003",
+        "api_id": "IF-UR-AP-S003-P003",
+        "api_path": "/app/approval/gnrl/getMyEapFormInterestList",
+        "request": {
+          "formNm": "휴가신청서"
+        },
+        "response": {
+          "code": "0000",
+          "message": "성공",
+          "responseTime": "2025.07.03 15:25:34",
+          "body": [
+            {
+              "companyId": "C202506101631000868",
+              "formId": "FORM202506201108001295",
+              "employeeId": "M202506201316001300",
+              "sortSeq": 1,
+              "useYn": "Y",
+              "formClassifyId": "EFC202506301607002158",
+              "formBody": "서식본문  양식내용입니다.99999",
+              "formKorNm": "교육신청서99",
+              "formEngNm": "test form",
+              "formTitle": "휴가 신청서",
+              "formUseYn": "Y",
+              "deleteYn": "N",
+              "formType": "1",
+              "externalsDocYn": "N",
+              "approvalLineType": "1",
+              "numberingId": "string",
+              "applicateTarget": "1",
+              "previewYn": "Y",
+              "printYn": "Y",
+              "attachFileMandatoryYn": "Y",
+              "tloverYn": "N",
+              "approvalCancelPossibleYn": "Y",
+              "draftingCancelYn": "Y",
+              "deleteAllowYn": "Y",
+              "exposureYn": "Y",
+              "approvalMemo": "테스트입니다.",
+              "formClassifyKorNm": "기안문서",
+              "formClassifyEngNm": "test 1"
+            }
+          ]
+        }
+      },
+      "create_form_interest": {
+        "description": "bookmark biểu mẫu",
+        "id": "SC-UR-AP-S003",
+        "api_id": "IF-UR-AP-S003-P004",
+        "api_path": "/app/approval/gnrl/createEapFormInterest",
+        "request": {
+          "formId": "FORM001"
+        },
+        "response": {
+          "code": "0000",
+          "message": "성공",
+          "responseTime": "2025.07.03 14:10:27",
+          "body": 1
+        }
+      },
+      "delete_form_interest": {
+        "description": "Xóa biểu mẫu đã bookmark",
+        "id": "SC-UR-AP-S003",
+        "api_id": "IF-UR-AP-S003-P005",
+        "api_path": "/app/approval/gnrl/deleteEapFormInterest",
+        "request": {
+          "formId": "FORM001"
+        },
+        "response": {
+          "code": "0000",
+          "message": "성공",
+          "responseTime": "2025.07.03 14:10:37",
+          "body": 1
+        }
+      }
+    }
+  }
+}
